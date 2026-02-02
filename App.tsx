@@ -87,7 +87,7 @@ const App: React.FC = () => {
       <style>
         {`@keyframes uiEnter{0%{opacity:0;transform:translateY(18px);}100%{opacity:1;transform:translateY(0);}}.ui-enter{opacity:0;transform:translateY(18px);animation:uiEnter 0.6s ease-out both;}`}
       </style>
-      <div className="relative flex flex-col bg-black overflow-hidden shadow-2xl mx-auto w-full max-w-[420px] h-full h-[100vh]">
+      <div className="relative flex flex-col bg-black overflow-hidden shadow-2xl mx-auto w-[100vw] max-w-[420px] h-full h-[100vh]">
         <CanvasVideos items={videoLayout} />
         <div
           className="absolute inset-0 z-[5] pointer-events-none"
