@@ -22,8 +22,9 @@ const CanvasVideos: React.FC<CanvasVideosProps> = ({ items }) => {
         {`@keyframes canvasEnter{0%{opacity:0;transform:rotate(-25deg) scale(0.95);}100%{opacity:1;transform:rotate(0deg) scale(1);}}@keyframes itemFade{0%{opacity:0;}100%{opacity:var(--opacity);}}`}
       </style>
       <div
-        className="relative w-[200%] h-full left-[-50%]"
+        className="relative w-[200%] h-full"
         style={{
+          left: 'calc(-50% + 80px)',
           transformOrigin: '100% 100%',
           animation: 'canvasEnter 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) both'
         }}
